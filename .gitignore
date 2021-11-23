@@ -1,0 +1,5 @@
+virtualenv
+.env
+store
+src/__pycache__
+cron.log

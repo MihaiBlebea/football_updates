@@ -1,0 +1,1463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" data-status-code="200">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description"
+		content="Get the latest live football scores, results &amp; fixtures from across the world, including UEFA Champions League, powered by Goal.com" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Live Football Scores, Fixtures &amp; Results | Goal.com</title>
+	<style type="text/css">
+		body,
+		html {
+			font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+			font-size: 16px;
+			color: #081f2c;
+			padding: 0;
+			margin: 0
+		}
+
+		a {
+			text-decoration: none;
+			color: #00a9ce
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: 700;
+			color: #081f2c;
+			margin: 10px 0
+		}
+
+		h1 {
+			font-size: 18px
+		}
+
+		h2,
+		h3 {
+			font-size: 16px
+		}
+
+		h5,
+		h6 {
+			font-size: 14px
+		}
+
+		ul {
+			padding-left: 10px;
+			margin-left: 0
+		}
+
+		.page-container {
+			padding: 2px
+		}
+
+		.page-header,
+		.widget-headline {
+			font-size: 18px
+		}
+
+		.page-header,
+		.part-title,
+		.widget-headline {
+			margin: 10px 0;
+			font-weight: 700;
+			color: #00000c
+		}
+
+		.part-title {
+			font-size: 16px
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 3px 8px;
+			background-color: #00a9ce;
+			color: #fffffe;
+			font-size: 12px;
+			border: 0
+		}
+
+		.clear {
+			clear: both
+		}
+
+		.image-wrapper {
+			width: 190px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center
+		}
+
+		.image-wrapper img {
+			width: 100%
+		}
+
+		.widget-header {
+			height: 25px;
+			background-color: #081f2c;
+			color: #fffffe;
+			padding: 5px;
+			margin: 0
+		}
+
+		.widget-header__logo img {
+			margin-top: 2px
+		}
+
+		.widget-navigation--table {
+			text-align: center;
+			margin: 0 auto;
+			width: 100%;
+			border: 0
+		}
+
+		.widget-navigation--table td {
+			width: 50%;
+			border: 1px solid #081f2c;
+			background-color: #fffffe;
+			color: #081f2c;
+			font-size: 14px;
+			font-family: Arial, Helvetica, Helvetica Neue, sans-serif
+		}
+
+		.widget-navigation--table td a {
+			padding: 6px 0;
+			display: block
+		}
+
+		.widget-edition-picker {
+			text-align: center;
+			padding: 10px 10px 0
+		}
+
+		.widget-footer {
+			background-color: #081f2c;
+			color: #fffffe;
+			padding: 15px 10px;
+			text-align: center
+		}
+
+		.widget-footer a {
+			color: #fffffe
+		}
+
+		.widget-footer__links {
+			list-style: none;
+			margin: 15px 0;
+			padding: 0;
+			text-align: center;
+			color: #fffffe
+		}
+
+		.widget-footer__links li {
+			display: inline-block;
+			padding: 0 5px;
+			font-size: 16px;
+			line-height: normal
+		}
+
+		.widget-footer__links li:last-child {
+			border-right: 0
+		}
+
+		.widget-footer__copyright {
+			font-size: 12px;
+			margin: 15px 0 0;
+			color: #fffffe
+		}
+
+		.widget-calendar {
+			margin: 10px 0;
+			text-align: center
+		}
+
+		.widget-calendar .next,
+		.widget-calendar .prev {
+			padding: 5px
+		}
+
+		.widget-calendar .text {
+			font-size: 14px
+		}
+
+		.widget-fixtures-and-results .competition-matches .competition-wrapper {
+			background-color: #1f324a;
+			padding-left: 10px
+		}
+
+		.widget-fixtures-and-results .competition-matches .competition-title {
+			margin-top: 5px;
+			padding-left: 5px;
+			display: block;
+			color: #fffffe;
+			font-size: 14px;
+			text-transform: uppercase;
+			line-height: 20px;
+			position: relative;
+			text-decoration: none;
+			font-weight: 700
+		}
+
+		.widget-fixtures-and-results .competition-matches .competition-name {
+			color: #fffffe
+		}
+
+		.widget-fixtures-and-results .competition-matches .match-row-list__blank {
+			font-size: 12px;
+			margin: 5px 0;
+			padding-left: 5px;
+			display: block
+		}
+
+		.match-row {
+			margin-bottom: 5px;
+			border: 1px solid #d0d6d5
+		}
+
+		.match-row__status {
+			color: #081f2c;
+			font-size: 12px
+		}
+
+		.match-row__state {
+			float: left;
+			margin-right: 5px;
+			color: #fffffe
+		}
+
+		.match-row__date,
+		.match-row__state {
+			padding: 3px
+		}
+
+		.match-row__date {
+			font-weight: 700;
+			display: block
+		}
+
+		.match-row__teams {
+			font-size: 12px;
+			line-height: 14px;
+			table-layout: fixed;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.match-row__teams td {
+			vertical-align: middle;
+			height: 20px
+		}
+
+		.match-row__crest,
+		.match-row__goals {
+			width: 14px;
+			text-align: center
+		}
+
+		.match-row__goals {
+			height: 12px;
+			line-height: 12px;
+			margin-top: -6px
+		}
+
+		.match-row__line {
+			text-align: center;
+			width: 8px
+		}
+
+		.match-row__link {
+			padding: 2px 0
+		}
+
+		.match-row__team-away--win,
+		.match-row__team-home--win {
+			font-weight: 700
+		}
+
+		.match-row__agregate {
+			text-align: center;
+			font-size: 10px;
+			display: block;
+			padding: 2px 0
+		}
+
+		.match-row__competition-name {
+			text-align: center;
+			font-size: 10px;
+			background-color: #d0d6d5;
+			color: #081f2c;
+			display: block;
+			padding: 2px
+		}
+
+		.match-row--status-can .match-row__state,
+		.match-row--status-pld .match-row__state {
+			background-color: #081f2c
+		}
+
+		.match-row--status-pla .match-row__state,
+		.match-row--status-sus .match-row__state {
+			background-color: #ff8200
+		}
+
+		.match-row--status-pos .match-row__state {
+			background-color: #00ac77
+		}
+	</style>
+	<link rel="icon" type="image/png" href="/assets/low-end/ltr/favicon-16x16.png" />
+	<link rel="canonical" href="https://www.goal.com/en-gb/live-scores" />
+	<meta name="robots" content="NOINDEX, NOFOLLOW" />
+</head>
+
+<body class="layout-low-end  page-live-scores ">
+	<div><img
+			src="https://www.goal.com/analyticsproxy?v=1&amp;tid=UA-62411523-1&amp;dh=www.goal.com&amp;dp=%2Fen-gb%2Flive-scores&amp;t=pageview&amp;cd1=soccer&amp;cd2=Mobile&amp;cd5=%3ASchedule%3AToday%3A&amp;cd8=UEFA%20Champions%20League%2CUEFA%20Europa%20League%2CPremier%20League%2CPrimera%20Divisi%C3%B3n%2CSerie%20A%2CBundesliga%2CLigue%201%2CChampionship%2CPremiership%2CFIFA%20Club%20World%20Cup%2CFA%20Cup%2CCopa%20del%20Rey%2CCoppa%20Italia%2CLeague%20Cup%2CWC%20Qualification%20Europe%2CWC%20Qualification%20South%20America%2CWomen%27s%20Super%20League%2CUEFA%20Women%27s%20Champions%20League&amp;cd9=Schedule&amp;cd10=en-gb&amp;cd11=Mobilenojs&amp;cd20=en&amp;cd23=Today&amp;cd12=r"
+			alt="" style="display: none" /></div>
+	<div class="widget-header"> <a href="/en-gb" class="widget-header__logo"> <img
+				src="/assets/low-end/ltr/img/logo/light-lowend-header.d1d7448b47.png" alt="GOAL.com" height="20"
+				width="57" /> </a> </div>
+	<form class="widget-edition-picker" action="/switch-edition" method="get">
+		<div> <select name="edition">
+				<option value="de"> Deutsch </option>
+				<option value="en" selected="selected"> English </option>
+				<option value="en-au"> &ndash; Australia </option>
+				<option value="en-bh"> &ndash; Bahrain </option>
+				<option value="en-cm"> &ndash; Cameroon </option>
+				<option value="en-gh"> &ndash; Ghana </option>
+				<option value="en-in"> &ndash; India </option>
+				<option value="en-ie"> &ndash; Ireland </option>
+				<option value="en-ke"> &ndash; Kenya </option>
+				<option value="en-kw"> &ndash; Kuwait </option>
+				<option value="en-my"> &ndash; Malaysia </option>
+				<option value="en-ng"> &ndash; Nigeria </option>
+				<option value="en-om"> &ndash; Oman </option>
+				<option value="en-ph"> &ndash; Philippines </option>
+				<option value="en-qa"> &ndash; Qatar </option>
+				<option value="en-sa"> &ndash; Saudi Arabia </option>
+				<option value="en-sg"> &ndash; Singapore </option>
+				<option value="en-za"> &ndash; South Africa </option>
+				<option value="en-tza"> &ndash; Tanzania </option>
+				<option value="en-ug"> &ndash; Uganda </option>
+				<option value="en-gb" selected="selected"> &ndash; UK </option>
+				<option value="en-ae"> &ndash; United Arab Emirates </option>
+				<option value="en-us"> &ndash; USA </option>
+				<option value="es"> Español </option>
+				<option value="es-ar"> &ndash; Argentina </option>
+				<option value="es-cl"> &ndash; Chile </option>
+				<option value="es-co"> &ndash; Colombia </option>
+				<option value="es-mx"> &ndash; México </option>
+				<option value="fr"> Français </option>
+				<option value="id"> Indonesia </option>
+				<option value="it"> Italiano </option>
+				<option value="hu"> Magyar </option>
+				<option value="nl"> Nederlands </option>
+				<option value="br"> Português </option>
+				<option value="tr"> Türkçe </option>
+				<option value="vn"> Việt Nam </option>
+				<option value="ar"> العربية </option>
+				<option value="ar-sa"> &ndash; السعودية </option>
+				<option value="ar-eg"> &ndash; مصر </option>
+				<option value="th"> ไทย </option>
+				<option value="kr"> 한국어 </option>
+				<option value="jp"> 日本語 </option>
+				<option value="zh-cn"> 简体中文 </option>
+				<option value="zh-hk"> 繁體中文 </option>
+				<option value="zh-tw"> &ndash; 臺灣 </option>
+			</select> <br /> <input type="submit" class="btn" value="Submit" /> </div>
+	</form>
+	<div class="widget-navigation">
+		<table class="widget-navigation--table" border="1" bordercolor="#000000" width="100%">
+			<tr>
+				<td width="49%"><a href="/en-gb">News</a></td>
+				<td width="49%"><a href="/en-gb/live-scores">Live Scores</a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="page-container">
+		<h1>Live Football Scores, Fixtures &amp; Results</h1>
+		<div class="widget-calendar"> <a href="/en-gb/results/2021-11-19" class="prev" rel="nofollow"> &lt; </a> <span
+				class="today"> <span class="text">20 November 2021</span> </span> <a href="/en-gb/fixtures/2021-11-21"
+				class="next" rel="nofollow"> &gt; </a> </div>
+		<div class="widget-fixtures-and-results">
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/premier-league/2kwbbcootiqqgmrzs6o5inle5"
+						class="competition-title"> <span class="competition-name">Premier League</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (12:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/leicester-city-v-chelsea/e3i9o7k2k0l1q335epspq1z4k"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/leicester-city-v-chelsea/e3i9o7k2k0l1q335epspq1z4k"> <b
+												class="match-row__goals">3</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/leicester-city-v-chelsea/e3i9o7k2k0l1q335epspq1z4k">
+											<span class="match-row__team-name">Leicester City</span> </a> </td>
+									<td class="match-row__team-away match-row__team-away--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/leicester-city-v-chelsea/e3i9o7k2k0l1q335epspq1z4k">
+											<span class="match-row__team-name">Chelsea</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/aston-villa-v-brighton-hove-albion/e3b1cleof3cfunwi8mb8uhous">
+											<b class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/aston-villa-v-brighton-hove-albion/e3b1cleof3cfunwi8mb8uhous">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/aston-villa-v-brighton-hove-albion/e3b1cleof3cfunwi8mb8uhous">
+											<span class="match-row__team-name">Aston Villa</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/aston-villa-v-brighton-hove-albion/e3b1cleof3cfunwi8mb8uhous">
+											<span class="match-row__team-name">Brighton &amp; Hove Albion</span> </a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/burnley-v-crystal-palace/e3en5w5zvyaabyatqlt3u43ro"> <b
+												class="match-row__goals">3</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/burnley-v-crystal-palace/e3en5w5zvyaabyatqlt3u43ro"> <b
+												class="match-row__goals">3</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/burnley-v-crystal-palace/e3en5w5zvyaabyatqlt3u43ro">
+											<span class="match-row__team-name">Burnley</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/burnley-v-crystal-palace/e3en5w5zvyaabyatqlt3u43ro">
+											<span class="match-row__team-name">Crystal Palace</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/newcastle-united-v-brentford/e3ugviq3zt0cy4earnp755dsk">
+											<b class="match-row__goals">3</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/newcastle-united-v-brentford/e3ugviq3zt0cy4earnp755dsk">
+											<b class="match-row__goals">3</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/newcastle-united-v-brentford/e3ugviq3zt0cy4earnp755dsk">
+											<span class="match-row__team-name">Newcastle United</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/newcastle-united-v-brentford/e3ugviq3zt0cy4earnp755dsk">
+											<span class="match-row__team-name">Brentford</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/norwich-city-v-southampton/e3xv906c03rmjn4i70qhz7das"> <b
+												class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/norwich-city-v-southampton/e3xv906c03rmjn4i70qhz7das"> <b
+												class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/norwich-city-v-southampton/e3xv906c03rmjn4i70qhz7das">
+											<span class="match-row__team-name">Norwich City</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/norwich-city-v-southampton/e3xv906c03rmjn4i70qhz7das">
+											<span class="match-row__team-name">Southampton</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/watford-v-manchester-united/e44rzmap48519a1le6vslqyhg">
+											<b class="match-row__goals">4</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/watford-v-manchester-united/e44rzmap48519a1le6vslqyhg">
+											<b class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/watford-v-manchester-united/e44rzmap48519a1le6vslqyhg">
+											<span class="match-row__team-name">Watford</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/watford-v-manchester-united/e44rzmap48519a1le6vslqyhg">
+											<span class="match-row__team-name">Manchester United</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/wolverhampton-wanderers-v-west-ham-united/e489w11weimlt46zx2jkib66s">
+											<b class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/wolverhampton-wanderers-v-west-ham-united/e489w11weimlt46zx2jkib66s">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/wolverhampton-wanderers-v-west-ham-united/e489w11weimlt46zx2jkib66s">
+											<span class="match-row__team-name">Wolverhampton Wanderers</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/wolverhampton-wanderers-v-west-ham-united/e489w11weimlt46zx2jkib66s">
+											<span class="match-row__team-name">West Ham United</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-fix">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__date">20/11/2021 (17:30 GMT)</span>
+							</div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/liverpool-v-arsenal/e3lqhae6ntewv05cblx08iv4k"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/liverpool-v-arsenal/e3lqhae6ntewv05cblx08iv4k"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/liverpool-v-arsenal/e3lqhae6ntewv05cblx08iv4k"> <span
+												class="match-row__team-name">Liverpool</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/liverpool-v-arsenal/e3lqhae6ntewv05cblx08iv4k"> <span
+												class="match-row__team-name">Arsenal</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/primera-divisi%C3%B3n/34pl8szyvrbwcmfkuocjm3r6t"
+						class="competition-title"> <span class="competition-name">Primera División</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (13:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/celta-de-vigo-v-villarreal/6abcyfx29x43i5086hc2gu3o4"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/celta-de-vigo-v-villarreal/6abcyfx29x43i5086hc2gu3o4"> <b
+												class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/celta-de-vigo-v-villarreal/6abcyfx29x43i5086hc2gu3o4">
+											<span class="match-row__team-name">Celta de Vigo</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/celta-de-vigo-v-villarreal/6abcyfx29x43i5086hc2gu3o4">
+											<span class="match-row__team-name">Villarreal</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:15 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/sevilla-v-deportivo-alav%C3%A9s/6athc7k2xb1jwkyfirhhx0g0k">
+											<b class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/sevilla-v-deportivo-alav%C3%A9s/6athc7k2xb1jwkyfirhhx0g0k">
+											<b class="match-row__goals">2</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/sevilla-v-deportivo-alav%C3%A9s/6athc7k2xb1jwkyfirhhx0g0k">
+											<span class="match-row__team-name">Sevilla</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/sevilla-v-deportivo-alav%C3%A9s/6athc7k2xb1jwkyfirhhx0g0k">
+											<span class="match-row__team-name">Deportivo Alavés</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-fix">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__date">20/11/2021 (17:30 GMT)</span>
+							</div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/atl%C3%A9tico-madrid-v-osasuna/6a45qs3ameumddmxn27wb3eac">
+											<b class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/atl%C3%A9tico-madrid-v-osasuna/6a45qs3ameumddmxn27wb3eac">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/atl%C3%A9tico-madrid-v-osasuna/6a45qs3ameumddmxn27wb3eac">
+											<span class="match-row__team-name">Atlético Madrid</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/atl%C3%A9tico-madrid-v-osasuna/6a45qs3ameumddmxn27wb3eac">
+											<span class="match-row__team-name">Osasuna</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-fix">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__date">20/11/2021 (20:00 GMT)</span>
+							</div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/barcelona-v-espanyol/6a7pr6vrs3wcfxe6lxrhlc9w4"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/barcelona-v-espanyol/6a7pr6vrs3wcfxe6lxrhlc9w4"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/barcelona-v-espanyol/6a7pr6vrs3wcfxe6lxrhlc9w4"> <span
+												class="match-row__team-name">Barcelona</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/barcelona-v-espanyol/6a7pr6vrs3wcfxe6lxrhlc9w4"> <span
+												class="match-row__team-name">Espanyol</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/serie-a/1r097lpxe0xn03ihb7wi98kao"
+						class="competition-title"> <span class="competition-name">Serie A</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (14:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/atalanta-v-spezia/dgh8t28ss8ora2mchzm303tw4"> <b
+												class="match-row__goals">5</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/atalanta-v-spezia/dgh8t28ss8ora2mchzm303tw4"> <b
+												class="match-row__goals">2</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/atalanta-v-spezia/dgh8t28ss8ora2mchzm303tw4"> <span
+												class="match-row__team-name">Atalanta</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/atalanta-v-spezia/dgh8t28ss8ora2mchzm303tw4"> <span
+												class="match-row__team-name">Spezia</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pla">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">12&#039;</span> <span
+									class="match-row__date">20/11/2021 (17:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/lazio-v-juventus/dh0v2snxo8drdph5973j44f84"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/lazio-v-juventus/dh0v2snxo8drdph5973j44f84"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/lazio-v-juventus/dh0v2snxo8drdph5973j44f84"> <span
+												class="match-row__team-name">Lazio</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/lazio-v-juventus/dh0v2snxo8drdph5973j44f84"> <span
+												class="match-row__team-name">Juventus</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-fix">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__date">20/11/2021 (19:45 GMT)</span>
+							</div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/fiorentina-v-milan/dgntgfss7yoxtcxgzibnzqgpg"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/fiorentina-v-milan/dgntgfss7yoxtcxgzibnzqgpg"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/fiorentina-v-milan/dgntgfss7yoxtcxgzibnzqgpg"> <span
+												class="match-row__team-name">Fiorentina</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/fiorentina-v-milan/dgntgfss7yoxtcxgzibnzqgpg"> <span
+												class="match-row__team-name">Milan</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/bundesliga/6by3h89i2eykc341oz7lv1ddd"
+						class="competition-title"> <span class="competition-name">Bundesliga</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (14:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/arminia-bielefeld-v-wolfsburg/c2dk5mejpn48fzx5stpb40k5w">
+											<b class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/arminia-bielefeld-v-wolfsburg/c2dk5mejpn48fzx5stpb40k5w">
+											<b class="match-row__goals">2</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/arminia-bielefeld-v-wolfsburg/c2dk5mejpn48fzx5stpb40k5w">
+											<span class="match-row__team-name">Arminia Bielefeld</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/arminia-bielefeld-v-wolfsburg/c2dk5mejpn48fzx5stpb40k5w">
+											<span class="match-row__team-name">Wolfsburg</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (14:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/bayer-leverkusen-v-bochum/c1qb3qm2cypjli08h0cdrj9jo"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/bayer-leverkusen-v-bochum/c1qb3qm2cypjli08h0cdrj9jo"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/bayer-leverkusen-v-bochum/c1qb3qm2cypjli08h0cdrj9jo">
+											<span class="match-row__team-name">Bayer Leverkusen</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/bayer-leverkusen-v-bochum/c1qb3qm2cypjli08h0cdrj9jo">
+											<span class="match-row__team-name">Bochum</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (14:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/borussia-dortmund-v-stuttgart/c1mywgkk5mu3zluvsbds7gob8">
+											<b class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/borussia-dortmund-v-stuttgart/c1mywgkk5mu3zluvsbds7gob8">
+											<b class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/borussia-dortmund-v-stuttgart/c1mywgkk5mu3zluvsbds7gob8">
+											<span class="match-row__team-name">Borussia Dortmund</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/borussia-dortmund-v-stuttgart/c1mywgkk5mu3zluvsbds7gob8">
+											<span class="match-row__team-name">Stuttgart</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (14:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/borussia-mgladbach-v-greuther-f%C3%BCrth/c1wp9db1t2pf7xzskadzz8gt0">
+											<b class="match-row__goals">4</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/borussia-mgladbach-v-greuther-f%C3%BCrth/c1wp9db1t2pf7xzskadzz8gt0">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/borussia-mgladbach-v-greuther-f%C3%BCrth/c1wp9db1t2pf7xzskadzz8gt0">
+											<span class="match-row__team-name">Borussia M&#039;gladbach</span> </a>
+									</td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/borussia-mgladbach-v-greuther-f%C3%BCrth/c1wp9db1t2pf7xzskadzz8gt0">
+											<span class="match-row__team-name">Greuther Fürth</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (14:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/hoffenheim-v-rb-leipzig/c23d0uqrrsvv893qxh5bsyhp0"> <b
+												class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/hoffenheim-v-rb-leipzig/c23d0uqrrsvv893qxh5bsyhp0"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/hoffenheim-v-rb-leipzig/c23d0uqrrsvv893qxh5bsyhp0"> <span
+												class="match-row__team-name">Hoffenheim</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/hoffenheim-v-rb-leipzig/c23d0uqrrsvv893qxh5bsyhp0"> <span
+												class="match-row__team-name">RB Leipzig</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-fix">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__date">20/11/2021 (17:30 GMT)</span>
+							</div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/union-berlin-v-hertha-bsc/c1tjs0kqft0gixpjybu2me39w"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/union-berlin-v-hertha-bsc/c1tjs0kqft0gixpjybu2me39w"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/union-berlin-v-hertha-bsc/c1tjs0kqft0gixpjybu2me39w">
+											<span class="match-row__team-name">Union Berlin</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/union-berlin-v-hertha-bsc/c1tjs0kqft0gixpjybu2me39w">
+											<span class="match-row__team-name">Hertha BSC</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/ligue-1/dm5ka0os1e3dxcp3vh05kmp33"
+						class="competition-title"> <span class="competition-name">Ligue 1</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pla">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">55&#039;</span> <span
+									class="match-row__date">20/11/2021 (16:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/psg-v-nantes/c51zbega60tz0c1agc1083ris"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/psg-v-nantes/c51zbega60tz0c1agc1083ris"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/psg-v-nantes/c51zbega60tz0c1agc1083ris"> <span
+												class="match-row__team-name">PSG</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/psg-v-nantes/c51zbega60tz0c1agc1083ris"> <span
+												class="match-row__team-name">Nantes</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-fix">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__date">20/11/2021 (20:00 GMT)</span>
+							</div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/rennes-v-montpellier/c55d4wuj73eizu4jn9wtu9xxw"> <b
+												class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/rennes-v-montpellier/c55d4wuj73eizu4jn9wtu9xxw"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/rennes-v-montpellier/c55d4wuj73eizu4jn9wtu9xxw"> <span
+												class="match-row__team-name">Rennes</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/rennes-v-montpellier/c55d4wuj73eizu4jn9wtu9xxw"> <span
+												class="match-row__team-name">Montpellier</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/championship/7ntvbsyq31jnzoqoa8850b9b8"
+						class="competition-title"> <span class="competition-name">Championship</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (12:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/sheffield-united-v-coventry-city/4b3s7out8qafybhqy8pvaqrys">
+											<b class="match-row__goals">0</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/sheffield-united-v-coventry-city/4b3s7out8qafybhqy8pvaqrys">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/sheffield-united-v-coventry-city/4b3s7out8qafybhqy8pvaqrys">
+											<span class="match-row__team-name">Sheffield United</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/sheffield-united-v-coventry-city/4b3s7out8qafybhqy8pvaqrys">
+											<span class="match-row__team-name">Coventry City</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/bristol-city-v-blackburn-rovers/4a3s5krgcwvgd6h3lpa9pu2ok">
+											<b class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/bristol-city-v-blackburn-rovers/4a3s5krgcwvgd6h3lpa9pu2ok">
+											<b class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/bristol-city-v-blackburn-rovers/4a3s5krgcwvgd6h3lpa9pu2ok">
+											<span class="match-row__team-name">Bristol City</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/bristol-city-v-blackburn-rovers/4a3s5krgcwvgd6h3lpa9pu2ok">
+											<span class="match-row__team-name">Blackburn Rovers</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/fulham-v-barnsley/4aazz8m74dk2238vt5skm4e1g"> <b
+												class="match-row__goals">4</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/fulham-v-barnsley/4aazz8m74dk2238vt5skm4e1g"> <b
+												class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/fulham-v-barnsley/4aazz8m74dk2238vt5skm4e1g"> <span
+												class="match-row__team-name">Fulham</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/fulham-v-barnsley/4aazz8m74dk2238vt5skm4e1g"> <span
+												class="match-row__team-name">Barnsley</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/huddersfield-town-v-west-bromwich-albion/4af8ccd455ws84y08efe5fris">
+											<b class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/huddersfield-town-v-west-bromwich-albion/4af8ccd455ws84y08efe5fris">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/huddersfield-town-v-west-bromwich-albion/4af8ccd455ws84y08efe5fris">
+											<span class="match-row__team-name">Huddersfield Town</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/huddersfield-town-v-west-bromwich-albion/4af8ccd455ws84y08efe5fris">
+											<span class="match-row__team-name">West Bromwich Albion</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/hull-city-v-birmingham-city/4ajru6fwe9u0b9xbp3w39zqj8">
+											<b class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/hull-city-v-birmingham-city/4ajru6fwe9u0b9xbp3w39zqj8">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/hull-city-v-birmingham-city/4ajru6fwe9u0b9xbp3w39zqj8">
+											<span class="match-row__team-name">Hull City</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/hull-city-v-birmingham-city/4ajru6fwe9u0b9xbp3w39zqj8">
+											<span class="match-row__team-name">Birmingham City</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/middlesbrough-v-millwall/4ao6f13gv4w9jwjn2phgf6plg"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/middlesbrough-v-millwall/4ao6f13gv4w9jwjn2phgf6plg"> <b
+												class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/middlesbrough-v-millwall/4ao6f13gv4w9jwjn2phgf6plg">
+											<span class="match-row__team-name">Middlesbrough</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/middlesbrough-v-millwall/4ao6f13gv4w9jwjn2phgf6plg">
+											<span class="match-row__team-name">Millwall</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/preston-north-end-v-cardiff-city/4as2me0texsxor3w816a6i7tg">
+											<b class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/preston-north-end-v-cardiff-city/4as2me0texsxor3w816a6i7tg">
+											<b class="match-row__goals">2</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/preston-north-end-v-cardiff-city/4as2me0texsxor3w816a6i7tg">
+											<span class="match-row__team-name">Preston North End</span> </a> </td>
+									<td class="match-row__team-away match-row__team-away--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/preston-north-end-v-cardiff-city/4as2me0texsxor3w816a6i7tg">
+											<span class="match-row__team-name">Cardiff City</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/reading-v-nottingham-forest/4b043qnsy075ftbv58dhk7pqs">
+											<b class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/reading-v-nottingham-forest/4b043qnsy075ftbv58dhk7pqs">
+											<b class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/reading-v-nottingham-forest/4b043qnsy075ftbv58dhk7pqs">
+											<span class="match-row__team-name">Reading</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/reading-v-nottingham-forest/4b043qnsy075ftbv58dhk7pqs">
+											<span class="match-row__team-name">Nottingham Forest</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/stoke-city-v-peterborough-united/4b9uof4h3kmpyzqcf2mvhiqz8">
+											<b class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/stoke-city-v-peterborough-united/4b9uof4h3kmpyzqcf2mvhiqz8">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/stoke-city-v-peterborough-united/4b9uof4h3kmpyzqcf2mvhiqz8">
+											<span class="match-row__team-name">Stoke City</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/stoke-city-v-peterborough-united/4b9uof4h3kmpyzqcf2mvhiqz8">
+											<span class="match-row__team-name">Peterborough United</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/swansea-city-v-blackpool/4bdn0lxa7jyo7ypvlhcj5lpn8"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/swansea-city-v-blackpool/4bdn0lxa7jyo7ypvlhcj5lpn8"> <b
+												class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/swansea-city-v-blackpool/4bdn0lxa7jyo7ypvlhcj5lpn8">
+											<span class="match-row__team-name">Swansea City</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/swansea-city-v-blackpool/4bdn0lxa7jyo7ypvlhcj5lpn8">
+											<span class="match-row__team-name">Blackpool</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/premiership/e21cf135btr8t3upw0vl6n6x0"
+						class="competition-title"> <span class="competition-name">Premiership</span> </a> </div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/dundee-united-v-aberdeen/bgty2w56nzfqfo25qgm0rn28k"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/dundee-united-v-aberdeen/bgty2w56nzfqfo25qgm0rn28k"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/dundee-united-v-aberdeen/bgty2w56nzfqfo25qgm0rn28k">
+											<span class="match-row__team-name">Dundee United</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/dundee-united-v-aberdeen/bgty2w56nzfqfo25qgm0rn28k">
+											<span class="match-row__team-name">Aberdeen</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/motherwell-v-hearts/bh2an90s5nx6jmcoj3pugpjbo"> <b
+												class="match-row__goals">2</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/motherwell-v-hearts/bh2an90s5nx6jmcoj3pugpjbo"> <b
+												class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/motherwell-v-hearts/bh2an90s5nx6jmcoj3pugpjbo"> <span
+												class="match-row__team-name">Motherwell</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/motherwell-v-hearts/bh2an90s5nx6jmcoj3pugpjbo"> <span
+												class="match-row__team-name">Hearts</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (15:00 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/st-mirren-v-livingston/bhemmmik7wp56hm7fzik1vjmc"> <b
+												class="match-row__goals">1</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/st-mirren-v-livingston/bhemmmik7wp56hm7fzik1vjmc"> <b
+												class="match-row__goals">1</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home "> <a class="match-row__link"
+											href="/en-gb/match/st-mirren-v-livingston/bhemmmik7wp56hm7fzik1vjmc"> <span
+												class="match-row__team-name">St. Mirren</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/st-mirren-v-livingston/bhemmmik7wp56hm7fzik1vjmc"> <span
+												class="match-row__team-name">Livingston</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/womens-super-league/6vq8j5p3av14nr3iuyi4okhjt"
+						class="competition-title"> <span class="competition-name">Women&#039;s Super League</span> </a>
+				</div>
+				<div class="match-row-list">
+					<div class="match-row  match-row--status-pld">
+						<div class="match-row__data">
+							<div class="match-row__status"> <span class="match-row__state">FT</span> <span
+									class="match-row__date">20/11/2021 (11:30 GMT)</span> </div>
+							<table class="match-row__teams " width="94%">
+								<tr>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/manchester-city-v-aston-villa/c9mfrk8sti98ssoe4ojpt0gt0">
+											<b class="match-row__goals">5</b> </a> </td>
+									<td rowspan="2" width="4%">-</td>
+									<td width="48%"> <a class="match-row__link"
+											href="/en-gb/match/manchester-city-v-aston-villa/c9mfrk8sti98ssoe4ojpt0gt0">
+											<b class="match-row__goals">0</b> </a> </td>
+								</tr>
+								<tr>
+									<td class="match-row__team-home match-row__team-home--win"> <a
+											class="match-row__link"
+											href="/en-gb/match/manchester-city-v-aston-villa/c9mfrk8sti98ssoe4ojpt0gt0">
+											<span class="match-row__team-name">Manchester City</span> </a> </td>
+									<td class="match-row__team-away "> <a class="match-row__link"
+											href="/en-gb/match/manchester-city-v-aston-villa/c9mfrk8sti98ssoe4ojpt0gt0">
+											<span class="match-row__team-name">Aston Villa</span> </a> </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/uefa-champions-league/4oogyu6o156iphvdvphwpck10"
+						class="competition-title"> <span class="competition-name">UEFA Champions League</span> </a>
+				</div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-11-23" class="match-row-list__blank"> Next
+						match on 23/11/2021 </a> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/uefa-europa-league/4c1nfi2j1m731hcay25fcgndq"
+						class="competition-title"> <span class="competition-name">UEFA Europa League</span> </a> </div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-11-24" class="match-row-list__blank"> Next
+						match on 24/11/2021 </a> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/fifa-club-world-cup/cmvff99i4w10udooqckzt8c2x"
+						class="competition-title"> <span class="competition-name">FIFA Club World Cup</span> </a> </div>
+				<div class="match-row-list"> <span class="match-row-list__blank">No matches scheduled in this
+						competition</span> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/fa-cup/2hj3286pqov1g1g59k2t2qcgm"
+						class="competition-title"> <span class="competition-name">FA Cup</span> </a> </div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-11-30" class="match-row-list__blank"> Next
+						match on 30/11/2021 </a> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/copa-del-rey/apdwh753fupxheygs8seahh7x"
+						class="competition-title"> <span class="competition-name">Copa del Rey</span> </a> </div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-12-01" class="match-row-list__blank"> Next
+						match on 01/12/2021 </a> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/coppa-italia/6694fff47wqxl10lrd9tb91f8"
+						class="competition-title"> <span class="competition-name">Coppa Italia</span> </a> </div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-12-14" class="match-row-list__blank"> Next
+						match on 14/12/2021 </a> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/league-cup/725gd73msyt08xm76v7gkxj7u"
+						class="competition-title"> <span class="competition-name">League Cup</span> </a> </div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-12-21" class="match-row-list__blank"> Next
+						match on 21/12/2021 </a> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a href="/en-gb/wc-qualification-europe/39q1hq42hxjfylxb7xpe9bvf9"
+						class="competition-title"> <span class="competition-name">WC Qualification Europe</span> </a>
+				</div>
+				<div class="match-row-list"> <span class="match-row-list__blank">No matches scheduled in this
+						competition</span> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a
+						href="/en-gb/wc-qualification-south-america/2db0aw1duj2my9l5iey5gm6nq"
+						class="competition-title"> <span class="competition-name">WC Qualification South America</span>
+					</a> </div>
+				<div class="match-row-list"> <span class="match-row-list__blank">No matches scheduled in this
+						competition</span> </div>
+			</div>
+			<div class="competition-matches">
+				<div class="competition-wrapper"> <a
+						href="/en-gb/uefa-womens-champions-league/55hcphd1ccc6eai1ms77460on" class="competition-title">
+						<span class="competition-name">UEFA Women&#039;s Champions League</span> </a> </div>
+				<div class="match-row-list"> <a href="/en-gb/fixtures/2021-12-08" class="match-row-list__blank"> Next
+						match on 08/12/2021 </a> </div>
+			</div>
+		</div>
+	</div>
+	<div class="widget-footer"> <a href="/en-gb" class="widget-footer__logo"> <img
+				src="/assets/low-end/ltr/img/logo/light-lowend-header.d1d7448b47.png" alt="GOAL.com" /> </a>
+		<div class="widget-footer__links">
+			<div><a href="/en-gb/contact">Contact Us</a></div>
+			<div><a href="/en-gb/legal/terms-conditions">Terms of Service</a></div>
+			<div><a href="/en-gb/legal/privacy-policy">Privacy Policy</a></div>
+		</div>
+		<p class="widget-footer__copyright">Copyright © 2021 <a href="/en-gb">Goal (United Kingdom)</a> All rights
+			reserved. The information contained in <a href="/en-gb">Goal (United Kingdom)</a> may not be published,
+			broadcast, rewritten, or redistributed without the prior written authority of <a href="/en-gb">Goal (United
+				Kingdom)</a></p>
+	</div>
+</body>
+
+</html>
