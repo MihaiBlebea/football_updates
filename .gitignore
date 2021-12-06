@@ -3,3 +3,4 @@ virtualenv
 store
 src/__pycache__
 cron.log
+application.log

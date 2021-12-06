@@ -11,17 +11,17 @@ def main():
 		if job.comment == COMMENT:
 			remove(cron)
 
-	# install(cron)
+	install(cron)
 
 
 def install(cron):
 	path = pathlib.Path(__file__).parent.resolve()
 	print(path)
 	job = cron.new(
-		command=f"{path}/../virtualenv/bin/python3 {path}/update.py >> {path}/../cron.log 2>&1",
+		command=f"{path}/../virtualenv/bin/python3 {path}/poll.py >> {path}/../cron.log 2>&1",
 		comment=COMMENT
 	)
-	job.minute.every(1)
+	job.minute.every(5)
 	cron.write()
 
 def remove(cron):
