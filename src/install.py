@@ -18,7 +18,7 @@ def install(cron):
 	path = pathlib.Path(__file__).parent.resolve()
 	print(path)
 	job = cron.new(
-		command=f"{path}/../execute.sh poll >> {path}/../cron.log 2>&1",
+		command=f"{path}/../virtualenv/bin/python3 {path}/poll.py >> {path}/../cron.log 2>&1",
 		comment=COMMENT
 	)
 	job.minute.every(5)
