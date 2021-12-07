@@ -4,6 +4,8 @@ from logs import logging
 import json
 from dotenv import dotenv_values
 from typing import Callable
+from pathlib import Path
+
 
 BASE_URL = "https://dev-rapidapi-football-scores.cap-rover.purpletreetech.com"
 
@@ -12,7 +14,7 @@ def main():
 	[send_notification(match) for match in match_generator(get_matches)]
 
 def get_auth() -> tuple:
-	config = dotenv_values(".env")
+	config = dotenv_values(f"{Path(__file__).parent.resolve()}/../.env")
 	return (config["USERNAME"], config["PASSWORD"])
 
 def get_headers() -> dict:
