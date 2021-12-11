@@ -7,7 +7,7 @@ Clone and install the application with one script
 git clone git@github.com:MihaiBlebea/football_updates.git ./football_updates && \
 cd ./football_updates && \
 chmod +x ./execute.sh && \
-make intsall
+make install
 ```
 
 ### How to uninstall from local?
