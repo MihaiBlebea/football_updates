@@ -4,3 +4,4 @@ store
 src/__pycache__
 cron.log
 application.log
+last_update.txt
